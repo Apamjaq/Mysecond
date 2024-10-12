@@ -1,60 +1,182 @@
+:root{
+    --radiusbox:20px;
+    --bord: 6px double black;
+}
+
 body{
-    background-color: bisque;
-    
-}
-
-header {
     background-color: aliceblue;
-    padding: 5px 30px;
-    width: 400px;
-    font-size: 20px;
-    border-radius: 20px;
-    
+    direction: rtl;
+    padding:  10px;
+    min-width:auto;
 
 }
 
-main h3{
-    background-color: aquamarine;
-    width: 440px;   
-    padding: 10px;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 20px;
+#main-bar{
+    background-color: black;
+    margin: 0;
+    padding: 20px 20px;
+    position: relative;
+    top: -20px;
+    border-radius: 0px 0px 40px 40px;
+
+
+}
+
+#main-bar li{
+    color: white;
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 30px;
+    margin: 0px;
+
     
 }
 
-section{
+#main-bar li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+#main-bar li a:hover{
+    color:rgb(134, 119, 99);
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+
+
+
+#main-logo{
+    position: absolute;
+    right:160vh;
+    top: 15px;
+    background-color: rgb(203, 203, 226);
+    border-radius: 10px 30px;
+    border: 10px double;
+
+}
+
+.very-main{
+    background-image:url(texture1.png);
+    background-size: 50%; 
+    border-radius: var(--radiusbox);
+    padding: 20px;
+}
+
+
+.container_1{
     display: grid;
-    grid-template: repeat(5 , 1fr)/1fr 1fr;
-    font-size: 30px;
-    gap: 20px 100px;
-    background-color: cadetblue;
-    padding: 30px;
-    margin: 10px;
-    border-radius: 10px;
-
+    grid-template-columns: 1fr 1fr;
 }
 
-section h4{
-    background-color:coral;
+
+.container_2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.part_one{
+    background-color: rgb(206, 45, 45 , 0.8) ;
+    margin: 20px;
     padding: 20px;
-    border-radius: 20px;
-    border:4px solid black;
+    border-radius:var(--radiusbox);
+    border: var(--bord);
+    font-size: 20px;
 }
 
-section img{
-    border-radius: 20px;
-}
-
-
-.done{
-    font-size: 30px;
-    background-color: chocolate;
-    width: 700px;
+.part_two{
+    background-color: rgb(147, 224, 59 , 0.8);
+    margin: 20px;
     padding: 20px;
-    border-radius: 20px;
+    border-radius:var(--radiusbox);
+    border: var(--bord);
+    font-size: 25px;
     text-align: center;
+
+}
+
+.part_two input{
+    width: 400px;
+    height: 30px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.part_two button{
+    width: 100px;
+    height: 40px;
+    background-color: antiquewhite;
+    border: 0 solid;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.part_three{
+    background-color: rgb(51, 200, 200 , 0.8);
+    margin: 20px;
+    padding: 20px;
+    border-radius:var(--radiusbox);
+    border: var(--bord);
+    font-size: 22px;
+}
+
+.part_four{
+    background-color: rgb(223, 83, 206 , 0.8);
+    margin: 20px;
+    padding: 20px;
+    border-radius:var(--radiusbox);
+    border: var(--bord);
+    font-size: 22px;
 }
 
 
+.part_one h3 , .part_two h3 , .part_three h3 ,.part_four h3{
+    border-radius:10px;
+    padding: 8px 10px;
+    margin: 10px 10px;
+}
 
+
+.part_one h3 {
+    background-color:rgb(206, 45, 45);
+}
+
+.part_two h3{
+    background-color: rgb(147, 224, 59);
+}
+
+.part_three h3{
+    background-color:rgb(51, 200, 200);
+}
+
+.part_four h3{
+    background-color: rgb(223, 83, 206);
+}
+
+#comeback{
+    position: relative;
+    right:580px;
+    text-align: center;
+    background-color: rgb(140, 202, 40);
+    font-size: 30px;
+    width: 300px;
+    height: 50px;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 30px;
+}
+
+#comeback a{
+    text-decoration: none;
+    color: #000;
+}
+
+#comeback a:hover{
+    color:rgb(195, 122, 26);
+}
